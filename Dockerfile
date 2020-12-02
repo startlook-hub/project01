@@ -2,5 +2,4 @@ FROM openjdk:8-jdk-alpine
 RUN mkdir -p /apps
 COPY ./target/project01-01.jar /apps/app.jar
 WORKDIR /apps
-CMD ["/apps/entrypoint.sh"]
 ENTRYPOINT ["java","-jar","app.jar"]
